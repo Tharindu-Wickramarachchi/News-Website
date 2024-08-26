@@ -12,7 +12,7 @@
 ### Responsive Design
 <p align="center" width="100%"> 
 <img src="https://github.com/Tharindu-Wickramarachchi/News-Website/blob/main/src/assets/Images/news-website-laptop.png" alt="news-website-laptop.png" width="500"> 
-<img src="https://github.com/Tharindu-Wickramarachchi/News-Website/blob/main/src/assets/Images/news-website-mobile.png" alt="news-website-mobile.png" width="180"> 
+<img src="https://github.com/Tharindu-Wickramarachchi/News-Website/blob/main/src/assets/Images/news-website-mobile.png" alt="news-website-mobile.png" width="150"> 
 </p>
 
 <br>
