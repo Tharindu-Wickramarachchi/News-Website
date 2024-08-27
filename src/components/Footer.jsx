@@ -5,10 +5,10 @@ import { SiGithub } from "react-icons/si";
 import { MdLocalPhone } from "react-icons/md";
 
 const Footer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    const handleResize = () => setIsMobile(window.innerWidth <= 750);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -36,7 +36,13 @@ const Footer = () => {
     fontSize: '25px',      
   };
 
-  const sectionStyle = {
+  const textSectionStyle = {
+    textAlign: 'center',   
+    margin: isMobile ? '0 40px' : '0 140px 0 40px',  
+    maxWidth: '400px',
+  };
+
+  const contactSectionStyle = {
     textAlign: 'center',   
     margin: '0 40px',   
     maxWidth: '400px',    
@@ -49,14 +55,14 @@ const Footer = () => {
 
   return (
     <footer className="" style={footerStyle}>
-      <div style={sectionStyle}>
+      <div style={textSectionStyle}>
         <span className="badge text-bg-primary text-black fs-3">N E W S</span>
         <p className="my-3" style={descriptionStyle}>
           Stay updated with news from 54 countries on our site. We bring you the latest headlines and trends from around the globe.
         </p>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={contactSectionStyle}>
         <h5 className="fs-3 text-primary fw-bold">Contact Me</h5>
         <div>
           <a href="tel:0703114655" style={linkStyle}>
